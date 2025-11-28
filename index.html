@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to PDF Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image to PDF Converter</h1>
+        <p>Multiple JPG, PNG images ko ek single PDF mein badlein.</p>
+        
+        <div class="upload-box">
+            <input type="file" id="imageUploader" accept="image/*" multiple>
+            <label for="imageUploader">📂 Images Upload Karein</label>
+        </div>
+
+        <div class="preview-area" id="previewArea">
+            </div>
+
+        <button id="convertBtn" style="display: none;">Convert to PDF</button>
+        
+        <p id="message"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
